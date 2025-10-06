@@ -12,7 +12,7 @@ import icon from "astro-icon";
 import { defineConfig, envField } from "astro/config";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 import { version } from "./package.json";
-import { parsedDoc } from "./server/config.js";
+import { parsedDoc } from "./server/config.ts";
 const workerwarePath = fileURLToPath(new URL("./workerware/src", import.meta.url));
 
 export default defineConfig({
